@@ -1,0 +1,3 @@
+.missing-preview{width:54px;height:54px;display:grid;place-items:center;border-radius:5px;background:#e5eaee;color:#637887;font-size:1.5rem}
+.replace-button{display:inline-block;margin-top:12px;border:1px solid #9caebb;border-radius:6px;padding:8px 12px;color:#102a43;background:#fff;font-weight:700;cursor:pointer}
+.detail-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.detail-actions .secondary{margin-top:12px}
