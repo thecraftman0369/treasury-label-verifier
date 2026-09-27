@@ -1,0 +1,16 @@
+node_modules/
+.npm-cache/
+.cache/
+.vite/
+.playwright/
+dist/
+coverage/
+playwright-report/
+test-results/
+.env
+.netlify/
+*.log
+*.traineddata
+*.zip
+.DS_Store
+Thumbs.db
