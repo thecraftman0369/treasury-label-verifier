@@ -2,6 +2,9 @@
 
 LabelCheck is a local-first take-home prototype for comparing structured alcohol-label application data with one label image or a small batch. It performs real OCR in the browser with Tesseract.js, preserves original OCR output, applies field-specific comparison rules, and keeps a human-readable audit timeline.
 
+- **Live application:** https://funny-croissant-812230.netlify.app/
+- **Source repository:** https://github.com/thecraftman0369/treasury-label-verifier
+
 ## Run locally
 
 Requirements: Node.js 20 or newer.

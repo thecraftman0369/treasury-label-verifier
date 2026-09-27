@@ -36,8 +36,8 @@ The interface is responsive, keyboard accessible, uses text and symbols in addit
 | Old Tom scenario | Complete | Unit test plus live OCR smoke fixture |
 | Unit, integration, end-to-end | Complete | 8 Vitest checks, component workflow, Playwright workflow, real OCR smoke |
 | Netlify configuration | Complete | `netlify.toml`, production build output, no secrets |
-| Public deployment | Blocked externally | No Netlify authentication is available in this environment |
-| GitHub repository | Prepared locally | Clean `main` repository; no GitHub CLI or token is available |
+| Public deployment | Complete | https://funny-croissant-812230.netlify.app/ |
+| GitHub repository | Complete | https://github.com/thecraftman0369/treasury-label-verifier |
 
 ## Test and performance results
 
@@ -72,8 +72,6 @@ The primary action is visible without a marketing screen. Required application f
 
 ## External blockers
 
-- GitHub: the repository is initialized locally, but this environment has no GitHub CLI and no GitHub token. No remote URL was invented.
-- Netlify: configuration and build are ready, but no Netlify authentication token or existing login is available. Therefore there is no public URL to test.
 - Submission form: no form URL or authenticated submission context was provided.
 
 ## Important files
@@ -117,9 +115,9 @@ git push -u origin main
 
 ## GitHub and Netlify status
 
-- GitHub: local repository prepared on `main`; no remote and no real GitHub URL.
-- Netlify: production build and configuration ready; not deployed and no real public URL.
-- Production OCR: confirmed real. `src/ocr.js` is bundled into the production build and the smoke test exercises Tesseract.js, not a mock.
+- GitHub: public source is available on `main` at https://github.com/thecraftman0369/treasury-label-verifier.
+- Netlify: public production deployment is live at https://funny-croissant-812230.netlify.app/.
+- Production OCR: confirmed real. The public deployment processed the Old Tom fixture at 95% OCR confidence; `src/ocr.js` is bundled into the production build and does not use a mock path.
 
 ## Submission checklist
 
@@ -131,9 +129,9 @@ git push -u origin main
 - [x] Unit, integration, end-to-end, OCR, performance, and visual checks run
 - [x] README, AGENTS.md, `.gitignore`, `.env.example`, and Netlify config present
 - [x] No secrets included
-- [ ] Push to GitHub after credentials or remote access are available
-- [ ] Deploy to Netlify after authentication is available
-- [ ] Test the public URL on desktop and mobile
+- [x] Publish the source to GitHub
+- [x] Deploy to Netlify
+- [x] Test the public URL and real OCR flow
 - [ ] Submit GitHub and Netlify URLs through the provided form
 
 ## Recommended next fixes
